@@ -1,10 +1,10 @@
-import { Metadata } from "next";
+import BlogLists from "@/components/custom/BlogLists";
 
-export const metadata: Metadata = {
-  description: "Homepage",
-};
-
-const Homepage = () => {
-  return <div>Homepage</div>;
+const Homepage = async () => {
+  return (
+    <>
+      <BlogLists />
+    </>
+  );
 };
 export default Homepage;
